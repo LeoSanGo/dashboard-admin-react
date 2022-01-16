@@ -11,6 +11,7 @@ const Sidebar = ({ sidebarOpen, sidebarClose }) => {
         </div>
 
         <i 
+        // eslint-disable-next-line no-undef
         onClick={() => closeSidebar()}
         className='fa fa-times'
         id='sidebarIcon'
@@ -64,8 +65,13 @@ const Sidebar = ({ sidebarOpen, sidebarClose }) => {
           <i className='fa fa-file-text'></i> 
           <a href='#'>Politica de Privacidade</a>
         </div>
-
+        <div className='sidebar__logout'>
+          <i className='fa fa-power-off'></i> 
+          <a href='#'>Logout</a>
+        </div>
       </div>
     </div>
   );
 }
+
+export default Sidebar;
