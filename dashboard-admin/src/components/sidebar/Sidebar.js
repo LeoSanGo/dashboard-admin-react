@@ -1,17 +1,16 @@
 import './Sidebar.css';
 import logo from '../../assets/logo.jpeg';
 
-const Sidebar = ({ sidebarOpen, sidebarClose }) => {
+const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
-    <div className={sidebarOpen ? "sidebar-responsive" : ""}>
-      <div className='sidebar__tutle'>
+    <div className={sidebarOpen ? "sidebar-responsive" : ""} id='sidebar'>
+      <div className='sidebar__title'>
         <div className='sidebar__img'>
           <img src={logo} alt="Logo" />
           <h1>DASHBOARDS</h1>
         </div>
 
         <i 
-        // eslint-disable-next-line no-undef
         onClick={() => closeSidebar()}
         className='fa fa-times'
         id='sidebarIcon'
@@ -19,7 +18,7 @@ const Sidebar = ({ sidebarOpen, sidebarClose }) => {
         ></i>
       </div>
       <div className='sidebar__menu'>
-        <div className='sidebar__link acitive_menu_link'>
+        <div className='sidebar__link active_menu_link'>
           <i className='fa fa-minus-square'></i> 
           <a href='#'>Home</a>
         </div>
