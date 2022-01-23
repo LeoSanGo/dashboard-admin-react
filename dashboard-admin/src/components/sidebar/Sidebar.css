@@ -92,6 +92,11 @@
   text-transform: uppercase;
 }
 
+.sidebar__logout >  i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
 .sidebar-responsive {
   display: inline !important;
   z-index: 9999 !important;
@@ -120,3 +125,4 @@
 
 
 
+  
