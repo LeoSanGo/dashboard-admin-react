@@ -1,4 +1,7 @@
-const NavBar = () => {
+import './Navbar.css';
+import avatar from '../../assets/avatar.svg';
+
+const NavBar = ({ sidebarOpen, openSidebar }) => {
   return (
     <nav className="navbar">
       <div className="nav_icon" onClick={() => openSidebar()}>
@@ -15,7 +18,17 @@ const NavBar = () => {
         <a href="#">
           <i className="fa fa-search"></i>
         </a>
+
+        <a href="#">
+          <i className="fa fa-clock-o"></i>
+        </a>
+
+        <a href="#">
+          <i width="30" src={avatar} alt="avatar"></i>
+        </a>
       </div>
     </nav>
   )
 }
+
+export default NavBar;
