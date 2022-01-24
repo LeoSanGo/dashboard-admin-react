@@ -18,7 +18,7 @@
   color: #a5aaad;
 }
 
-.nav__left > a {
+.navbar__left > a {
   margin-right: 30px;
   text-decoration: none;
   color: #a5aaad;
@@ -26,7 +26,7 @@
   font-weight: 700;
 }
 
-.navbar__letf .active_link {
+.navbar__left .active_link {
   color: #256aac;
   border-bottom: 3px solid #256aac;
   padding-bottom: 12px;
@@ -47,15 +47,27 @@
 .navbar__right > a {
   margin-left: 20px;
   text-decoration: none;
-}
+} 
 
-.navbar__rigth > a > i {
+.navbar__right > a > i {
   color: #a5aaad;
   font-size: 16px;
   border-radius: 50px;
   background: #FFF;
   box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #FFFF;
   padding: 7px;
+}
+
+@media only screen and (max-width: 978px) {
+  .nav_icon {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar__left {
+    display: none;
+  }
 }
 
 
