@@ -1,5 +1,6 @@
 import hello from '../../assets/hello.svg';
-//import Chart from '..charts/Chart';
+import Chart from '../charts/Chart';
+import "./Main.css";
 
 const Main = () => {
   return (
@@ -39,7 +40,7 @@ const Main = () => {
           </div>
 
           <div className='card'>
-            <i className='fa fa-bars fa-2x text-freen'></i>
+            <i className='fa fa-bars fa-2x text-green'></i>
             <div className='card_inner'>
               <p className='text-primary-p'>Categories</p>
               <span className='font-bold text-title'>40</span>
@@ -71,22 +72,22 @@ const Main = () => {
             <div className='charts__right__cards'>
               <div className='card1'>
                 <h1>Lucro</h1>
-                <h1>R$2500</h1>
+                <p>R$2500</p>
               </div>
 
               <div className='card2'>
                 <h1>Pagamentos</h1>
-                <h1>R$250,00</h1>
+                <p>R$250,00</p>
               </div>
 
               <div className='card3'>
                 <h1>Custos de hospedagem</h1>
-                <h1>R$150,00</h1>
+                <p>R$150,00</p>
               </div>
 
               <div className='card4'>
                 <h1>Banco de dados</h1>
-                <h1>R$180,00</h1>
+                <p>R$180,00</p>
               </div>
             </div>
           </div>
