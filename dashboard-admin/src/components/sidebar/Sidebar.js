@@ -45,7 +45,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         </div>
         <h2>PESSOAS</h2>
         <div className='sidebar__link'>
-          <i className='fa fa-mael'></i> 
+          <i className='fa fa-male'></i> 
           <a href='#'>Administradores</a>
         </div>
         <div className='sidebar__link'>
