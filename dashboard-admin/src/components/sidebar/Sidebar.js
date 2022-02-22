@@ -7,7 +7,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
       <div className='sidebar__title'>
         <div className='sidebar__img'>
           <img src={logo} alt="Logo" />
-          <h1>DASHBOARDS</h1>
+          <h1>Alpha Inc.</h1>
         </div>
 
         <i 
